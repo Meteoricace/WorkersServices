@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".services"
+            android:exported="true" />
+        <activity
             android:name=".personal_data"
             android:exported="true" />
         <activity
