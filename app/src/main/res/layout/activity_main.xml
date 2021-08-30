@@ -26,7 +26,7 @@
         android:gravity="center|center_horizontal|center_vertical"
         android:text="CHOOSE A SERVICE"
         android:textColor="#25b5da"
-        android:textSize="34sp" />
+        android:textSize="34sp"/>
 
     <Button
         android:id="@+id/A1_button_electrical"
