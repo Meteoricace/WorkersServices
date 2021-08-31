@@ -76,40 +76,37 @@ public class SlideViewPagerAdapter extends PagerAdapter {
                 back.setVisibility(View.GONE);
                 break;
             case 1:
-                logo.setImageResource(R.drawable.logo);
+                logo.setImageResource(R.drawable.phone_view_1);
                 ind1.setImageResource(R.drawable.unselected);
                 ind2.setImageResource(R.drawable.unselected);
                 ind3.setImageResource(R.drawable.selected);
                 ind4.setImageResource(R.drawable.unselected);
 
-                desc.setText("Select your order`s category and specify your problem");
+                desc.setText("Select your order`s category");
                 break;
             case 2:
-                logo.setImageResource(R.drawable.logo);
+                logo.setImageResource(R.drawable.phone_view_2);
                 ind1.setImageResource(R.drawable.unselected);
                 ind2.setImageResource(R.drawable.selected);
                 ind3.setImageResource(R.drawable.unselected);
                 ind4.setImageResource(R.drawable.unselected);
 
-                desc.setText("Confirm your order,pay for your request");
+                desc.setText("Specify your unit type");
                 break;
             case 3:
-                logo.setImageResource(R.drawable.logo);
+                logo.setImageResource(R.drawable.phone_view_3);
                 ind1.setImageResource(R.drawable.selected);
                 ind2.setImageResource(R.drawable.unselected);
                 ind3.setImageResource(R.drawable.unselected);
                 ind4.setImageResource(R.drawable.unselected);
 
-                desc.setText("you can rate the professional, for the work");
+                desc.setText("Choose your service type");
                 next.setVisibility(View.GONE);
                 break;
 
 
 
         }
-
-
-
         container.addView(view);
         return view;
 

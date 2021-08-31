@@ -42,7 +42,7 @@
                     android:id="@+id/enter_your_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="enter_your_name"/>
+                    android:hint="enter your name"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -99,7 +99,7 @@
                     android:layout_height="match_parent" />
             </LinearLayout>
             <Button
-                android:id="@+id/Submit"
+                android:id="@+id/submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
