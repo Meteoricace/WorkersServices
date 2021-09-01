@@ -10,10 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".services"
+            android:name=".personalData1"
             android:exported="true" />
         <activity
-            android:name=".personal_data"
+            android:name=".finish"
+            android:exported="true" />
+        <activity
+            android:name=".details"
+            android:exported="true" />
+        <activity
+            android:name=".services"
             android:exported="true" />
         <activity
             android:name=".splash_screen"

@@ -22,7 +22,7 @@ public class splash_screen extends AppCompatActivity {
                 finish();
             }
         };
-        mHandler.postDelayed(mRunnable,2000);
+        mHandler.postDelayed(mRunnable,1500);
         getSupportActionBar().hide();
 
     }

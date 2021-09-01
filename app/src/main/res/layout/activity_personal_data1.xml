@@ -11,10 +11,14 @@
         android:padding="8dp"
         android:orientation="vertical"
         tools:context=".personal_data">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="٨dp"
+            tools:layout_editor_absoluteY="٨dp">
+
             <TextView
                 android:id="@+id/text_personal"
                 android:layout_width="match_parent"
@@ -26,87 +30,124 @@
                 android:text="Personal data &amp; location"
                 android:textColor="#25b5da"
                 android:textSize="33sp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:text="Name:"
-                    android:gravity="center"
-                    android:textColor="@color/white"
-                    android:background="@drawable/corner"/>
-                <EditText
-                    android:id="@+id/enter_your_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="enter your name"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:text="Phone number:"
-                    android:gravity="center"
-                    android:textColor="@color/white"
-                    android:background="@drawable/corner"/>
-                <EditText
-                    android:id="@+id/enter_your_number"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="enter your number"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_margin="6dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/corner"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Name:"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/enter_your_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="enter your name"
+                    android:textColorHint="#25b5da"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/corner"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Phone number:"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/enter_your_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="enter your number"
+                    android:textColorHint="#25b5da"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/corner"
+                    android:gravity="center"
                     android:padding="8dp"
                     android:text="Address:"
-                    android:gravity="center"
-                    android:background="@drawable/corner"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/white" />
+
                 <EditText
                     android:id="@+id/enter_your_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="enter your address"/>
+                    android:hint="enter your address"
+                    android:textColorHint="#25b5da"
+                    tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="6dp"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/corner"
+                    android:gravity="center"
                     android:padding="8dp"
                     android:text="Governorate:"
-                    android:gravity="center"
-                    android:textColor="@color/white"
-                    android:background="@drawable/corner"/>
+                    android:textColor="@color/white" />
+
                 <Spinner
                     android:id="@+id/spinner"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
             </LinearLayout>
+
             <Button
-                android:id="@+id/submit"
+                android:id="@+id/personal_data_button_gps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/corner"
+                android:text="GPS"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/personal_data_button_Submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="150dp"
                 android:layout_marginBottom="20dp"
+                android:background="@drawable/corner"
                 android:text="Submit"
-                android:background="@drawable/corner"/>
+                android:textSize="20sp" />
         </LinearLayout>
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

@@ -11,10 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
-        android:fontFamily="sans-serif-medium"
+        android:fontFamily="serif"
         android:gravity="center"
         android:text="The App For All Your Needs"
-        android:textColor="#37474F"
+        android:textColor="#25b5da"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/ind4"
@@ -96,16 +96,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/selected" />
 
-    <ImageView
-        android:id="@+id/back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
-        app:srcCompat="@drawable/ic_back" />
 
     <ImageView
         android:id="@+id/next"
@@ -117,4 +107,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499"
         app:srcCompat="@drawable/ic_next" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        app:srcCompat="@drawable/ic_back" />
 </android.support.constraint.ConstraintLayout>
